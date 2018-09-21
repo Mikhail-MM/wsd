@@ -41,7 +41,7 @@ module.exports.sendAppointmentNote = async (req, res, next) => {
 		subject: "Your Appointment Confirmation!",
 		text: `Hello, 
 	
-This is an automatic confirmation from World Smiles Dental regarding an upcoming appointment for ${req.body.firstName} ${req.body.lastName}. Your request has been received by our office, and we will be expecting your arrival on ${moment(req.body.startDate).format("MMM Do")}. 
+This is an automatic confirmation from World Smiles Dental regarding an upcoming appointment for ${req.body.firstName} ${req.body.lastName}. Your request has been received by our office, and we will be expecting your arrival on ${moment(req.body.startDate).format("MMM Do")} at ${req.body.time}. 
 If this is your first visit with us, please bring your insurance information. We look forward to seeing you! Thank you.
 
 World Smiles Dental
