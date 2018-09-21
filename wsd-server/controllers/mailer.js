@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer')
 
-import { authpass } from '../auth_config/auth'
+const authpass = require('../auth_config/auth')
 
 nodemailer.createTestAccount((err, account) => {
 	let transporter = nodemailer.createTransport({
