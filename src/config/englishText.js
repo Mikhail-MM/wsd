@@ -69,6 +69,7 @@ const englishText = {
 			p3: "No, a routine tooth extraction is not painful! Before the procedure, the dentist will apply a topical anaesthetic to the gums to partially numb the area. After a few minutes, the patient will receive an injection to completely numb the part of the mouth where the extraction is performed. You will feel some pressure as the dentist pulls on the tooth to dislodge it from the socket, but the anaesthesia will ensure that the procedure is completely pain-free.",
 			h4: "Wisdom Teeth",
 			h5: "Why do I need to extract Wisdom Teeth?",
+			p4: "Depending on the size of a patient's jaw and the remaining space for the wisdom tooth to grow, there may be a situation in which the wisdom teeth grow in the mouth diagonally or in other molars. Wisdom teeth should be removed if they alter the alignment of the patient's other teeth. If the impacted wisdom teeth are not removed, they can grow diagonally to the other teeth and cause crowding, or they may remain below the gum line, collide with the roots of the adjacent teeth and abrade their neighboring molars."
 		},
 		prevent: {
 			h1: "Preventative Medicine",
