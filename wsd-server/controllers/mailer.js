@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer')
 
 const authpass = require('../auth_config/auth')
-
+/*
 nodemailer.createTestAccount((err, account) => {
 	let transporter = nodemailer.createTransport({
 		service: 'gmail',
@@ -25,6 +25,8 @@ nodemailer.createTestAccount((err, account) => {
 
 	});
 });
+
+*/
 
 module.exports.sendContactNotification = async (req, res, next) => {
 	console.log(req.body)
