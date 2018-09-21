@@ -69,7 +69,8 @@ app.get('*', (req, res) => {
 			res.status(err.status || 500).send();
 		});
 
-			const PORT = process.env.PORT || 5681
+			const PORT = ((process.env.PORT) || (5681))
 			const server = app.listen(PORT);
+			console.log("Server listening on port", PORT)
 				
 				module.exports = app;
