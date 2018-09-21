@@ -65,15 +65,11 @@ app.get('*', (req, res) => {
 		}
 
 //	Production Error Handler //
-
 		app.use((err, req, res, next) => {
 			res.status(err.status || 500).send();
 		});
 
-			const server = app.listen(config.port);
-
-			console.log('Listening at http://localhost: %s in %s mode',
-				server.address().port, app.get('env'));
-
+			const PORT = process.env.PORT || 5681
+			const server = app.listen(PORT);
 				
 				module.exports = app;
