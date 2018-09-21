@@ -3,15 +3,13 @@ const moment = require('moment')
 
 const authpass = require('../auth_config/auth')
 
-nodemailer.createTestAccount((err, account) => {
-	let transporter = nodemailer.createTransport({
-		service: 'gmail',
-		host: 'smtp.gmail.com',
-		auth: {
-			user: "wsdmailernoreply@gmail.com",
-			pass: authpass,
-		},
-	});
+let transporter = nodemailer.createTransport({
+	service: 'gmail',
+	host: 'smtp.gmail.com',
+	auth: {
+		user: "wsdmailernoreply@gmail.com",
+		pass: authpass,
+	},
 });
 
 module.exports.sendContactNotification = async (req, res, next) => {
