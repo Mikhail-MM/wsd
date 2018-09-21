@@ -41,12 +41,12 @@ module.exports.sendAppointmentNote = async (req, res, next) => {
 		subject: "Your Appointment Confirmation!",
 		text: `Hello, 
 	
-	This is an automatic confirmation from World Smiles Dental regarding an upcoming appointment for ${req.body.firstName} ${req.body.lastName}. Your request has been received by our office, and we will be expecting your arrival on ${moment(req.body.startDate).format("MMM Do")}. 
-	If this is your first visit with us, please bring your insurance information. We look forward to seeing you! Thank you.
+This is an automatic confirmation from World Smiles Dental regarding an upcoming appointment for ${req.body.firstName} ${req.body.lastName}. Your request has been received by our office, and we will be expecting your arrival on ${moment(req.body.startDate).format("MMM Do")}. 
+If this is your first visit with us, please bring your insurance information. We look forward to seeing you! Thank you.
 
-	World Smiles Dental
-	1417 W. Warner Ave Santa Ana, CA 92704
-	(714)-879-8118`	
+World Smiles Dental
+1417 W. Warner Ave Santa Ana, CA 92704
+(714)-879-8118`	
 	}
 	transporter.sendMail(mailOptions, (error, info) => {
 		if (error) {
@@ -60,10 +60,10 @@ module.exports.sendAppointmentNote = async (req, res, next) => {
 		to: '9084009318@txt.att.net',
 		subject: "New Appointment",
 		text: `Patient Name: ${req.body.firstName} ${req.body.lastName}
-	Email: ${req.body.email}
-	Phone: ${req.body.phone}
-	Requested Date: ${moment(req.body.startDate).format("MMM Do")}
-	Requested Time: ${req.body.time}`	
+Email: ${req.body.email}
+Phone: ${req.body.phone}
+Requested Date: ${moment(req.body.startDate).format("MMM Do")}
+Requested Time: ${req.body.time}`	
 	}
 	transporter.sendMail(smsOptions, (error, info) => {
 		if (error) {
