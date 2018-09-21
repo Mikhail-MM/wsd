@@ -4,11 +4,11 @@ const authpass = require('../auth_config/auth')
 
 nodemailer.createTestAccount((err, account) => {
 	let transporter = nodemailer.createTransport({
-		service: 'gmail'
+		service: 'gmail',
 		auth: {
 			user: "wsdmailernoreply@gmail.com",
 			pass: authpass,
-		}
+		},
 	});
 	let mailOptions = {
 		from: ' "World Smiles Dental" <wsdmailernoreply@gmail.com>',
