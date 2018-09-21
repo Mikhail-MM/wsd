@@ -1,5 +1,6 @@
 const express = require('express');
 
+console.log("Initializing Application")
 const path = require('path');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
@@ -28,9 +29,9 @@ app.use('/*', (req, res, next) => {
   next();
 });
 
-app.use(express.static(path.join(__dirname, 'client/build')))
+app.use(express.static(path.join(__dirname, '/../build')))
 app.get('*', (req, res) => {
-	res.sendFile(path.join(__dirname + '/client/build/index.html'))
+	res.sendFile(path.join(__dirname + '/../build/index.html'))
 })
 
 	// Routes //
