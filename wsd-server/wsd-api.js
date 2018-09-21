@@ -1,6 +1,5 @@
 const express = require('express');
 
-console.log("Initializing Application")
 const path = require('path');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
@@ -16,7 +15,7 @@ const router = express.Router()
 if(app.get('env') === 'development') var dev = true;
 if (dev) app.use(logger('dev'));
 if(app.get('env') === 'production') {
-	
+
 };
 
 app.use(bodyParser.json());
