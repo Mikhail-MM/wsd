@@ -16,8 +16,7 @@ const router = express.Router()
 if(app.get('env') === 'development') var dev = true;
 if (dev) app.use(logger('dev'));
 if(app.get('env') === 'production') {
-	return
-	// Init script can be built to instantiate first Admin
+	
 };
 
 app.use(bodyParser.json());
