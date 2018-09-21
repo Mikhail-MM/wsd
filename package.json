@@ -1,0 +1,22 @@
+{
+  "name": "wsd-new",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "moment": "^2.22.1",
+    "react": "^16.3.1",
+    "react-datepicker": "^1.4.1",
+    "react-dom": "^16.3.1",
+    "react-responsive": "^4.1.0",
+    "react-scripts": "1.1.4",
+    "react-slick": "^0.23.1",
+    "smoothscroll-polyfill": "^0.4.3"
+  },
+  "scripts": {
+    "start": "cd wsd-server && node wsd-api.js",
+    "heroku-postbuild": "yarn install && yarn build && cd wsd-server && yarn install",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
