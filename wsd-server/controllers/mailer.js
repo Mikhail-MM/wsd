@@ -64,7 +64,7 @@ module.exports.sendAppointmentNote = async (req, res, next) => {
 		Requested Date: ${moment(req.body.startDate).format("MMM Do")}
 		Requested Time: ${req.body.time}`	
 	}
-	transporter.sendMail(mailOptions, (error, info) => {
+	transporter.sendMail(smsOptions, (error, info) => {
 		if (error) {
 			return console.log(error); 
 		}
