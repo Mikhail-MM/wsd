@@ -1,1 +1,1 @@
-export const authpass = 'worldsmilesdental'
+module.exports = 'worldsmilesdental'
