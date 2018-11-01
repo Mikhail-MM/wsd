@@ -950,6 +950,7 @@ margin: 0 auto;
 .desktop-offer-slider-container {
   height: 376px;
   width: 650px;
+  max-width: 100%;
 
   background-color: rgb(0, 0, 0, .50);
 }
@@ -1507,7 +1508,7 @@ margin: 0 auto;
   width: 50px;
   position: fixed;
   top: calc(100vh - 34px);
-  left: calc(100vw - 72px);
+  left: calc(100% - 72px);
 }
 
 .tablet-language-float:hover {
@@ -1688,6 +1689,7 @@ margin: 0 auto;
 
 .tablet-offers-inner-container {
   width: auto;
+  max-width: 100%;
 }
 
 .before-after {
@@ -2064,7 +2066,7 @@ and (max-width: 500px) {
   }
   .tablet-language-float {
   top: calc(100vh - 35px);
-  left: calc(100vw - 70px);
+  left: calc(100% - 70px);
 }
   .tablet-blurb-container {
     margin: 0;
@@ -2089,4 +2091,10 @@ and (max-width: 500px) {
   }
 
 
+}
+
+@media (max-width: 650px) {
+  html {
+    overflow-x: hidden;
+  }
 }
