@@ -41,7 +41,6 @@ class DesktopSite extends Component {
 	}
 
 	handleScroll(event) {
-		console.log(event)
 		let scrollTop = event.pageY
 		
 
@@ -81,7 +80,6 @@ class DesktopSite extends Component {
 	}
 
 	scrollToRef(ref, instructions) {
-		console.log(ref.current.getBoundingClientRect())
 		/* 100 is Magic Number which is the size of the compressed header */
 		window.scrollTo({top: (ref.current.offsetTop - 100), behavior: "smooth"})
 
@@ -156,7 +154,7 @@ class DesktopSite extends Component {
 								<img src="./images/icons/usa.svg" />
 							</div>
 
-							{ this.props.lang === "english" ? "English" : "Español" }
+							{`Language: ${ this.props.lang === "english" ? "English" : "Español" }`}
 							
 							{/* Do some diffing on this.props.lang to set a className "active" to colour one background grey.*/ }
 						</div>

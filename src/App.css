@@ -1811,7 +1811,7 @@ margin: 0 auto;
   max-width: 400px;
 
   background-color: rgba(0,0,0,0.10);
-  transition: background-color 0.4s ease-out, color: 0.4s ease-out;
+  transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
 
 .tablet-menu-link-icon {
