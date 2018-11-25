@@ -60,7 +60,6 @@ class DesktopSite extends Component {
 		}
 		*/
 
-		console.log(scrollTop)
 		if (scrollTop > 0 && this.state.topOfPage === true) {
 			this.setState({
 				topOfPage: false
@@ -79,8 +78,6 @@ class DesktopSite extends Component {
 		this.setState({
 			[key]: category
 		})
-		console.log("New state");
-		console.log(this.state);
 	}
 
 	scrollToRef(ref, instructions) {
@@ -169,7 +166,7 @@ class DesktopSite extends Component {
 								<div className="skinnyheader-icon-container">
 										<img src="./images/icons/telephone.svg" />
 								</div>
-								<span className="desktop-header-text"> 714-213-1239 </span>
+								<span className="desktop-header-text"> (714) 213-1239 </span>
 							</div>
 							
 							<div className="contact-segment">
@@ -251,7 +248,7 @@ class DesktopSite extends Component {
 							<h2> {verbiage[this.props.lang].blurb.h1} </h2>
 							<h3 style={{marginBottom: 12}}> {verbiage[this.props.lang].blurb.h2} </h3>
 							<h4> 1417 W. Warner Avenue </h4>
-							<h4> 908-400-9318 </h4>
+							<h4> (714) 213-1239 </h4>
 						</div>
 						<div className="tumbler-menu"> 
 							<div className="duo-buttons">
