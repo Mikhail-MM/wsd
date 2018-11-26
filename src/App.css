@@ -2148,6 +2148,21 @@ and (max-width: 500px) {
     justify-content: space-around;
   }
   .desktop-about-inner-container {
-    width: 100%;
+    width: auto;
+  }
+}
+
+@media (max-width: 1320px) {
+  .desktop-nav-right {
+    width: auto;
+  }
+  .desktop-navigation-container {
+    justify-content: space-around;
+  }
+  .desktop-nav-right nav {
+    margin-right: 42px;
+  }
+  .desktop-about-inner-container {
+    justify-content: center;
   }
 }
