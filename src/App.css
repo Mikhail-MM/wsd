@@ -576,7 +576,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .desktop-logo-container {
   position: relative;
-  height: 100%;
+  height: auto;
   width: auto;
   color: white;
   text-align: center;
@@ -628,7 +628,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .customButton {
-  background-color: rgba(0, 16, 212, 0.5);
+  background-color: rgb(60, 72, 208);
   color: white;
 
   font-family: 'Source Sans Pro', Adobe Blank;
@@ -1154,7 +1154,7 @@ margin: 0 auto;
   height: auto;
   width: 14%;
   padding-top: 21px;
-  background-color: black;
+  background-color: #23ccb5;
 }
 
 .desktop-procedure-component-content {
@@ -1679,7 +1679,7 @@ margin: 0 auto;
 .tablet-about-container p {
   width: 75%;
   font-size: 14px;
-  margin: 8px 0px;
+  margin-top: 42px;
   text-align: center;
 }
 
@@ -1759,6 +1759,8 @@ margin: 0 auto;
   width: 100%;
   height: auto;
 
+  padding: 0 8px;
+
 }
 .tablet-linkheader-container {
   display: -webkit-box;
@@ -1796,6 +1798,7 @@ margin: 0 auto;
 }
 
 .tablet-menu-link:hover {
+  cursor: pointer;
   background-color: #00ff9a;
 }
 .tablet-menu-link > span {
@@ -1838,7 +1841,7 @@ margin: 0 auto;
   width: 100%;
   height: auto;
 
-  background-color: gray;
+  background-color: #1976d2;
 }
 
 .tablet-interactive-menu-screen {
@@ -1852,6 +1855,7 @@ margin: 0 auto;
   
   width: 100%;
   height: auto;
+  padding: 42px;
 }
 
 .tablet-appointment-container {
@@ -1881,7 +1885,7 @@ margin: 0 auto;
   width: 100%;
   height: 40px;
   color: black;
-  margin-bottom: 12px;
+  margin-top: 42px;
 }
 /* Images */
 
@@ -2167,5 +2171,12 @@ and (max-width: 500px) {
   }
   .desktop-about-inner-container {
     justify-content: center;
+  }
+}
+
+@media (max-width: 472px) {
+  .tablet-nav-logo {
+    font-size: 24px;
+    height: 30.4px;
   }
 }

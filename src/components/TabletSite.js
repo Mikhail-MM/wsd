@@ -366,7 +366,6 @@ class TabletSite extends Component {
 								<div className="desktop-before-after-background-container">
 									<img src="./images/desktop/beforeafter-background.jpg" />
 								</div>
-										Click to see Ortho/Reconstructive
 					<div className="tablet-offers-row">
 						<BeforeAfterSlider />
 					</div>
