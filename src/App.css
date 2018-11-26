@@ -20,6 +20,10 @@ form {
   height: auto;
 }
 
+input {
+  font-size: 16px;
+}
+
 label {
   margin-top: 12px;
   margin-bottom: 6px;
