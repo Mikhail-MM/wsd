@@ -227,12 +227,11 @@ class TabletSite extends Component {
 					</div>
 				</div>
 				<div className="tablet-about-container">
-					<h3 style={{margin: '42px 0'}}>{verbiage[this.props.lang].about.header}</h3>
+					<h3 style={{margin: '42px 0', color: 'black'}}>{verbiage[this.props.lang].about.header}</h3>
 						<img className="tablet-reactive-about-img" src="./images/desktop/chair2hires.jpg" />
 						
 							<p> {verbiage[this.props.lang].about.blurbp1}</p>
 							<p> {verbiage[this.props.lang].about.blurbp2}</p>
-							<p> {verbiage[this.props.lang].about.blurbp3}</p>
 				</div>
 				<div className="tablet-interactive-menu-container" ref={this.interactiveRef}>
 					<div className="tablet-linkheader-container" >

@@ -1781,7 +1781,6 @@ margin: 0 auto;
       justify-content: space-around;
   width: 100%;
   height: auto;
-  margin: 24px 0px;
 }
 
 .tablet-menu-link {
@@ -1909,8 +1908,8 @@ margin: 0 auto;
 .tablet-lang-ico {
   height: 30px;
   width: 50px;
-  -o-object-fit: none;
-     object-fit: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .tablet-reactive-about-img {
@@ -2182,5 +2181,8 @@ and (max-width: 500px) {
   .tablet-nav-logo {
     font-size: 24px;
     height: 30.4px;
+  }
+  .tablet-header-hidden {
+    height: 0px;
   }
 }
