@@ -850,37 +850,14 @@ margin: 0 auto;
   background-color: #1976D2;
   color: white;
 
-  transition: background-color 0.4s ease-out, color 0.4s ease-out;
-  animation: scalebounce 2s infinite;
+  transition: background-color 0.4s ease-out, color 0.4s ease-out, transform 0.4s ease-out;
 }
 
-@keyframes scalebounce {
-  0% {
-    transform: scale(1);
-  }
-
-  35% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.08);
-  }
-
-  65% {
-    transform: scale(1);
-  }
-
-  90% {
-    transform: scale(1.08);
-  }
-
-}
 
 .procedure-button:hover {
   cursor: pointer;
-  background-color: #4e67b8;
   color: #f5ba36;
+  transform: scale(1.05);
 }
 /* Desktop About Section */
 
@@ -2160,5 +2137,17 @@ and (max-width: 500px) {
 @media (max-width: 650px) {
   html {
     overflow-x: hidden;
+  }
+}
+
+@media (max-width: 1412px) {
+  .desktop-procedure-list-component-container {
+    width: auto;
+  }
+  .small-middle {
+    justify-content: space-around;
+  }
+  .desktop-about-inner-container {
+    width: 100%;
   }
 }
