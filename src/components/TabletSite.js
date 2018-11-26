@@ -158,7 +158,7 @@ class TabletSite extends Component {
 								<img className="tablet-nav-icon" src="./images/icons/email.svg" /> 
 								<h6 className="tablet-nav-header">{verbiage[this.props.lang].menulinks.contact}</h6>
 						</a>
-						<a className="tablet-nav-btn" href="tel:1-908-400-9318"> 
+						<a className="tablet-nav-btn" href="tel:1-714-213-1239"> 
 							<img className="tablet-nav-icon" src="./images/icons/telephone.svg" onClick={(event) => console.log("Handle PhoneCalls!")}/>
 							<h6 className="tablet-nav-header">{verbiage[this.props.lang].menulinks.call}</h6>
 						</a>
