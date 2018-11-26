@@ -185,6 +185,7 @@ const englishText = {
 			white: "Whitening", 
 		},
 	},
+	moreInfo: 'Services'
 }
 
 export default englishText

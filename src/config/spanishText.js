@@ -183,6 +183,7 @@ const spanishText = {
 			white: "Blanqueamiento", 
 		},
 	},
+	moreInfo: 'Información'
 }
 
 export default spanishText

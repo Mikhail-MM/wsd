@@ -1789,8 +1789,9 @@ margin: 0 auto;
   max-width: 400px;
 
   background-color: rgba(0,0,0,0.10);
-  margin-bottom: 5px;
-  border-radius: 5px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  padding: 0 8px;
   transition: background-color 0.4s ease-out;
 }
 
@@ -2105,7 +2106,7 @@ and (max-width: 500px) {
     font-size: 12px;
   }
   .tablet-lang-ico {
-    object-fit: cover;
+    object-fit: contain;
   }
   .tablet-language-float {
   top: calc(100vh - 35px);
