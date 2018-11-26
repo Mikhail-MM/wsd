@@ -431,6 +431,7 @@ h1, h2, h3, h4, h5, h6 {
   */
 
   background-color: #00BCD4;
+  z-index: 100;
 
   -o-transition: all 0.8s ease-in;
 
@@ -576,8 +577,7 @@ h1, h2, h3, h4, h5, h6 {
 .desktop-logo-container {
   position: relative;
   height: 100%;
-  width: 500px;
-  padding-top: 20px;
+  width: auto;
   color: white;
   text-align: center;
   -o-transition: all 0.8s ease-in;
@@ -1544,7 +1544,7 @@ margin: 0 auto;
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-
+  left: 0;
   width: 100%;
   height: auto;
 
