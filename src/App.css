@@ -1787,6 +1787,7 @@ margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
@@ -1811,8 +1812,15 @@ margin: 0 auto;
   color: white;
 }
 .tablet-menu-link-icon {
-  height: 60px;
-  width: 60px;
+  transition: border 0.2s ease-out;
+  border: 2px solid #2196f3;
+  border-radius: 100px;
+  height: 58px;
+  width: 58px;
+}
+
+.tablet-menu-link:hover > .tablet-menu-link-icon {
+  border-color: white;
 }
 
 .tablet-link-clickable {
