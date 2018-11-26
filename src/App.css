@@ -1114,7 +1114,7 @@ margin: 0 auto;
   min-height: 500px;
   width: 100%;
   min-width: 1180px;
-  padding-bottom: 32px;
+  padding-bottom: 42px;
 }
 
 .desktop-procedures-menu-button-container {
@@ -1443,7 +1443,7 @@ margin: 0 auto;
 }
 
 .desktop-loc-title{
-  margin-bottom: 21px;
+  margin-bottom: 42px;
 }
 .desktop-iframe-container {
   position: relative;
@@ -1835,6 +1835,11 @@ margin: 0 auto;
   color: black;
   width: 300px;
   text-align: center;
+}
+
+.tablet-google-map-container {
+  margin: 42px 0;
+  background-color: #1976d2;
 }
 
 .tablet-location-container {
