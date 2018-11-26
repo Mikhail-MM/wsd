@@ -1173,14 +1173,14 @@ margin: 0 auto;
       -ms-flex-direction: column;
           flex-direction: column;
 
-  height: 100%;
+  height: auto;
   width: 14%;
   padding-top: 21px;
   background-color: black;
 }
 
 .desktop-procedure-component-content {
-  height: 100%;
+  height: auto;
   width: 86%;
 
   padding: 21px 42px;
