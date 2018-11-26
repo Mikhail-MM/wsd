@@ -2,7 +2,7 @@ const spanishText = {
 	greeting: "Hola!",
 	headerLinks: {
 		about: "OFICINA",
-		services: "TRATAMIENTO",
+		services: "TRATAMIENTOS",
 		offers: "OFERTAS",
 		gallery: "FOTOS",
 		location: "UBICACION",

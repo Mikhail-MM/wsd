@@ -851,7 +851,7 @@ margin: 0 auto;
   color: white;
 
   transition: background-color 0.4s ease-out, color 0.4s ease-out;
-  animation: scalebounce 0.4s infinite;
+  animation: scalebounce 2s infinite;
 }
 
 @keyframes scalebounce {
@@ -859,16 +859,12 @@ margin: 0 auto;
     transform: scale(1);
   }
 
-  25% {
-    transform: scale(1.2);
-  }
-
   35% {
     transform: scale(1);
   }
 
   50% {
-    transform: scale(1.2);
+    transform: scale(1.08);
   }
 
   65% {
@@ -876,14 +872,15 @@ margin: 0 auto;
   }
 
   90% {
-    transform: scale(1.2);
+    transform: scale(1.08);
   }
 
 }
 
 .procedure-button:hover {
   cursor: pointer;
-
+  background-color: #4e67b8;
+  color: #f5ba36;
 }
 /* Desktop About Section */
 
@@ -1178,7 +1175,7 @@ margin: 0 auto;
 
   height: 100%;
   width: 14%;
-
+  padding-top: 21px;
   background-color: black;
 }
 
@@ -1186,7 +1183,7 @@ margin: 0 auto;
   height: 100%;
   width: 86%;
 
-  padding: 18px 18px;
+  padding: 21px 42px;
 
   background-color: white;
   color: black;
@@ -1214,7 +1211,6 @@ margin: 0 auto;
 
 .desktop-procedure-sidebar-button {
   width: 100%;
-  border-top: solid 1px white;
   border-bottom: solid 1px white;
   height: auto;
   padding: 12px 12px;
@@ -1222,6 +1218,10 @@ margin: 0 auto;
 
   text-align: center;
   font-size: 12px;
+}
+
+.desktop-procedure-sidebar-button:first-child {
+  border-top: solid 1px white;
 }
 
 .desktop-procedure-sidebar-button:hover {
@@ -1811,16 +1811,27 @@ margin: 0 auto;
   max-width: 400px;
 
   background-color: rgba(0,0,0,0.10);
-  transition: background-color 0.4s ease-out, color 0.4s ease-out;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  transition: background-color 0.4s ease-out;
 }
 
+.tablet-menu-link:hover {
+  background-color: #00ff9a;
+}
+.tablet-menu-link > span {
+  transition: color 0.4s ease-out;
+}
+.tablet-menu-link:hover > span {
+  color: white;
+}
 .tablet-menu-link-icon {
   height: 60px;
   width: 60px;
 }
 
 .tablet-link-clickable {
-  padding: calc(62px* 0.25);
+  padding: 21px 0;
   color: black;
   width: 300px;
   text-align: center;

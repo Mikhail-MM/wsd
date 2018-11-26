@@ -56,7 +56,6 @@ class TabletSite extends Component {
 	}
 
 	handleScroll(event) {
-		console.log(event)
 		let scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
 		
 
@@ -75,7 +74,6 @@ class TabletSite extends Component {
 		}
 		*/
 
-		console.log(scrollTop)
 		if (scrollTop > 0 && this.state.topOfPage === true) {
 			this.setState({
 				topOfPage: false
@@ -101,7 +99,6 @@ class TabletSite extends Component {
 					pageOffSet = 150
 				}
 
-		console.log(ref.current.getBoundingClientRect())
 		/* pageOffSet is Magic Number which is the size of the header - must account for margins of different sizing */
 			window.scrollTo({top: (ref.current.offsetTop - pageOffSet), behavior: "smooth"})
 
